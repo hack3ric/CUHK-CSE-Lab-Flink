@@ -2,7 +2,7 @@ version: "2.1"
 services:
   jobmanager:
     container_name: ${USER}_jobmanager
-    image: flink
+    image: flink:1.9.3
     expose:
       - "6123"
     ports:
@@ -14,7 +14,7 @@ services:
 
   taskmanager:
     container_name: ${USER}_taskmanager
-    image: flink
+    image: flink:1.9.3
     expose:
       - "6121"
       - "6122"
